@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería con Menú</title>
+    <link rel="stylesheet" href="pene1.css">
+    <link rel="icon" href="ROPA/logo/image.png" type="image/x-icon">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #ffffff;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #ffa600;
+            color: white;
+            border: 4px solid black;
+        }
+        .header button {
+            padding: 20px 20px;
+            margin: 5PX;
+            border:none;
+            background-color: #000000;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+            border: 3px solid rgb(255, 255, 255);
+
+        }
+        .header button:hover {
+            background-color: #f5c469;
+        }
+        .imagenes {
+            margin-top: 20px;
+            color: rgb(255, 166, 0);
+        }
+        .imagenes div {
+            display: none;
+        }
+        .imagenes img {
+            width: 350px;
+            height: auto;
+            margin: 7px;
+            border-radius: 10px;
+            border: 3px solid rgb(0, 0, 0);
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1><img width="100px" src="ROPA/logo/image.png" alt="logo"></h1>
+        <button onclick="mostrarImagenes('grupo1')">Zapatillas</button>
+        <button onclick="mostrarImagenes('grupo2')">Camisetas y Chaquetas</button>
+        <button onclick="mostrarImagenes('grupo3')">Pantalones</button>
+        <button onclick="mostrarImagenes('grupo4')">Accesorios</button>
+        <button onclick="mostrarImagenes('grupo5')">Sobre Nosotros</button>
+    </div>
+    <div class="imagenes">
+        <div id="grupo1">
+            <h2>Adidas Samba</h2>
+            <img src="ROPA/Zapatos/adidas samba/1.jpg" >
+            <img src="ROPA/Zapatos/adidas samba/2.jpg" >
+            <img src="ROPA/Zapatos/adidas samba/3.jpg" >
+            <img src="ROPA/Zapatos/adidas samba/4.jpg" >
+            <img src="ROPA/Zapatos/adidas samba/5.jpg" >
+            <h2>Airforce x Supreme</h2>
+            <img src="ROPA/Zapatos/airforce x supreme/1.jpeg" >
+            <img src="ROPA/Zapatos/airforce x supreme/2.jpeg" >
+            <img src="ROPA/Zapatos/airforce x supreme/3.jpeg" >
+            <img src="ROPA/Zapatos/airforce x supreme/4.jpeg" >
+            <img src="ROPA/Zapatos/airforce x supreme/5.jpeg" >
+            <h2>Alexander Mcqueen</h2>
+            <img src="ROPA/Zapatos/alexander mcqueen/1.jpg">
+            <img src="ROPA/Zapatos/alexander mcqueen/2.jpg">
+            <img src="ROPA/Zapatos/alexander mcqueen/3.jpg">
+            <img src="ROPA/Zapatos/alexander mcqueen/4.jpg">
+            <img src="ROPA/Zapatos/alexander mcqueen/5.jpg">
+            <h2>Bapesta</h2>
+            <img src="ROPA/Zapatos/bapesta/1.jpg">
+            <img src="ROPA/Zapatos/bapesta/2.jpg">
+            <img src="ROPA/Zapatos/bapesta/3.jpg">
+            <img src="ROPA/Zapatos/bapesta/4.jpg">
+            <img src="ROPA/Zapatos/bapesta/5.jpg">
+            <h2>Dior B22</h2>
+            <img src="ROPA/Zapatos/dior b22/1.jpg">
+            <img src="ROPA/Zapatos/dior b22/2.jpg">
+            <img src="ROPA/Zapatos/dior b22/3.jpg">
+            <img src="ROPA/Zapatos/dior b22/4.jpg">
+            <img src="ROPA/Zapatos/dior b22/5.jpg">
+            <h2>Dunk Rosas</h2>
+            <img src="ROPA/Zapatos/dunk rosas/1.jpg">
+            <img src="ROPA/Zapatos/dunk rosas/2.jpg">
+            <img src="ROPA/Zapatos/dunk rosas/3.jpg">
+            <img src="ROPA/Zapatos/dunk rosas/4.jpg">
+            <img src="ROPA/Zapatos/dunk rosas/5.jpg">
+            <h2>Dunk x Gucci</h2>
+            <img src="ROPA/Zapatos/dunk x gucci/1.jpg">
+            <img src="ROPA/Zapatos/dunk x gucci/2.jpg">
+            <img src="ROPA/Zapatos/dunk x gucci/3.jpg">
+            <img src="ROPA/Zapatos/dunk x gucci/4.jpg">
+            <img src="ROPA/Zapatos/dunk x gucci/5.jpg">
+            <h2>Jordan 1 OG</h2>
+            <img src="ROPA/Zapatos/jordan 1 og/1.jpg">
+            <img src="ROPA/Zapatos/jordan 1 og/2.jpg">
+            <img src="ROPA/Zapatos/jordan 1 og/3.jpg">
+            <img src="ROPA/Zapatos/jordan 1 og/4.jpg">
+            <h2>Levis x Airforce</h2>
+            <img src="ROPA/Zapatos/levis airforce/1.jpg">
+            <img src="ROPA/Zapatos/levis airforce/2.jpg">
+            <img src="ROPA/Zapatos/levis airforce/3.jpg">
+            <img src="ROPA/Zapatos/levis airforce/4.jpg">
+            <img src="ROPA/Zapatos/levis airforce/5.jpg">
+            <h2>Louis Vuitton</h2>
+            <img src="ROPA/Zapatos/louis vuitton/1.jpg">
+            <img src="ROPA/Zapatos/louis vuitton/2.jpg">
+            <img src="ROPA/Zapatos/louis vuitton/3.jpg">
+            <img src="ROPA/Zapatos/louis vuitton/4.jpg">
+            <img src="ROPA/Zapatos/louis vuitton/5.jpg">
+            <h2>New Balance 550</h2>
+            <img src="ROPA/Zapatos/new balance 550/1.jpg">
+            <img src="ROPA/Zapatos/new balance 550/2.jpg">
+            <img src="ROPA/Zapatos/new balance 550/3.jpg">
+            <img src="ROPA/Zapatos/new balance 550/4.jpg">
+            <h2>Retro 4</h2>
+            <img src="ROPA/Zapatos/retro 4/1.jpg">
+            <img src="ROPA/Zapatos/retro 4/2.jpg">
+            <img src="ROPA/Zapatos/retro 4/3.jpg">
+            <img src="ROPA/Zapatos/retro 4/4.jpg">
+            <h2>Yeezy x Stussy</h2>
+            <img src="ROPA/Zapatos/yeezy x stussy/1.jpg">
+            <h2>Chanclas Louis Vuitton</h2>
+            <img src="ROPA/Zapatos/chanclas louis vuitton/1.jpg">
+            <img src="ROPA/Zapatos/chanclas louis vuitton/2.jpg">
+            <h2>Yeezy Slide</h2>
+            <img src="ROPA/Zapatos/yeezy slide/1.jpg">
+            <img src="ROPA/Zapatos/yeezy slide/2.jpg">
+            <img src="ROPA/Zapatos/yeezy slide/3.jpg">
+        </div>
+
+        <div id="grupo2">
+            <h2>Camisa Amiri</h2>
+            <img src="ROPA/Camisas y chaquetas/camisa ami azul/1.jpg">
+            <img src="ROPA/Camisas y chaquetas/camisa ami azul/2.jpg">
+            <img src="ROPA/Camisas y chaquetas/camisa ami azul/3.jpg">
+            <img src="ROPA/Camisas y chaquetas/camisa ami azul/4.jpg">
+            <h2>Camisa Amiri</h2>
+            <img src="ROPA/Camisas y chaquetas/camisa ami verde/1.jpg">
+            <img src="ROPA/Camisas y chaquetas/camisa ami verde/3.jpg">
+            <img src="ROPA/Camisas y chaquetas/camisa ami verde/4.jpg">
+            <img src="ROPA/Camisas y chaquetas/camisa ami verde/2.jpg">
+
+            <h2>Chaqueta Ralph Lauren</h2>
+            <img src="ROPA/Camisas y chaquetas/chaqueta azul rph lauren/1.jpg">
+            <img src="ROPA/Camisas y chaquetas/chaqueta azul rph lauren/2.jpg">
+            <img src="ROPA/Camisas y chaquetas/chaqueta azul rph lauren/3.jpg">
+            <img src="ROPA/Camisas y chaquetas/chaqueta azul rph lauren/4.jpg">
+            <img src="ROPA/Camisas y chaquetas/chaqueta azul rph lauren/5.jpg">
+            <h2>Chaqueta Burberry</h2>
+            <img src="ROPA/Camisas y chaquetas/chaqueta burberry/1.jpg">
+            <img src="ROPA/Camisas y chaquetas/chaqueta burberry/2.jpg">
+            <img src="ROPA/Camisas y chaquetas/chaqueta burberry/3.jpg">
+            <img src="ROPA/Camisas y chaquetas/chaqueta burberry/4.jpg">
+            <img src="ROPA/Camisas y chaquetas/chaqueta burberry/5.jpg">
+            <h2>Chaqueta Cuadros LV</h2>
+            <img src="ROPA/Camisas y chaquetas/Chaqueta cuadros LV/1.jpg">
+            <img src="ROPA/Camisas y chaquetas/Chaqueta cuadros LV/2.jpg">
+            <img src="ROPA/Camisas y chaquetas/Chaqueta cuadros LV/3.jpg">
+            <img src="ROPA/Camisas y chaquetas/Chaqueta cuadros LV/4.jpg">
+            <img src="ROPA/Camisas y chaquetas/Chaqueta cuadros LV/5.jpg">
+            <h2>Chaqueta Ducatti</h2>
+            <img src="ROPA/Camisas y chaquetas/chaqueta ducati blanx/1.jpg">
+            <img src="ROPA/Camisas y chaquetas/chaqueta ducati blanx/2.jpg">
+            <img src="ROPA/Camisas y chaquetas/chaqueta ducati blanx/3.jpg">
+            <img src="ROPA/Camisas y chaquetas/chaqueta ducati blanx/4.jpg">
+            <img src="ROPA/Camisas y chaquetas/chaqueta ducati blanx/5.jpg">
+            <h2>Chaqueta Ducatti</h2>
+            <img src="ROPA/Camisas y chaquetas/chaqueta ducati negra/1.jpg">
+            <img src="ROPA/Camisas y chaquetas/chaqueta ducati negra/2.jpg">
+            <img src="ROPA/Camisas y chaquetas/chaqueta ducati negra/3.jpg">
+            <img src="ROPA/Camisas y chaquetas/chaqueta ducati negra/4.jpg">
+            <img src="ROPA/Camisas y chaquetas/chaqueta ducati negra/5.jpg">
+            <h2>Sudadera Lacoste</h2>
+            <img src="ROPA/Camisas y chaquetas/chaqueta lacoste/1.jpg">
+            <img src="ROPA/Camisas y chaquetas/chaqueta lacoste/2.jpg">
+            <img src="ROPA/Camisas y chaquetas/chaqueta lacoste/3.jpg">
+            <img src="ROPA/Camisas y chaquetas/chaqueta lacoste/4.jpg">
+            <img src="ROPA/Camisas y chaquetas/chaqueta lacoste/5.jpg">
+            <h2>Chaqueta Ralph Lauren</h2>
+            <img src="ROPA/Camisas y chaquetas/chaqueta marron raph lauren/1.jpg">
+            <img src="ROPA/Camisas y chaquetas/chaqueta marron raph lauren/2.jpg">
+            <img src="ROPA/Camisas y chaquetas/chaqueta marron raph lauren/3.jpg">
+            <img src="ROPA/Camisas y chaquetas/chaqueta marron raph lauren/4.jpg">
+            <img src="ROPA/Camisas y chaquetas/chaqueta marron raph lauren/5.jpg">
+            <h2>Chaqueta Nike</h2>
+            <img src="ROPA/Camisas y chaquetas/chaqueta nike gris/1.jpg">
+            <img src="ROPA/Camisas y chaquetas/chaqueta nike gris/2.jpg">
+            <img src="ROPA/Camisas y chaquetas/chaqueta nike gris/3.jpg">
+            <img src="ROPA/Camisas y chaquetas/chaqueta nike gris/4.jpg">
+            <img src="ROPA/Camisas y chaquetas/chaqueta nike gris/5.jpg">
+            <h2>Chaqueta Nike</h2>
+            <img src="ROPA/Camisas y chaquetas/chaqueta nike negra/1.jpg">
+            <img src="ROPA/Camisas y chaquetas/chaqueta nike negra/2.jpg">
+            <img src="ROPA/Camisas y chaquetas/chaqueta nike negra/3.jpg">
+            <img src="ROPA/Camisas y chaquetas/chaqueta nike negra/4.jpg">
+            <img src="ROPA/Camisas y chaquetas/chaqueta nike negra/5.jpg">
+        </div>
+        <div id="grupo3">
+            <h2>Denim Tears</h2>
+            <img src="ROPA/Pantalones/denim tears/1.jpg">
+            <img src="ROPA/Pantalones/denim tears/2.jpg">
+            <img src="ROPA/Pantalones/denim tears/3.jpg">
+            <img src="ROPA/Pantalones/denim tears/4.jpg">
+            <img src="ROPA/Pantalones/denim tears/5.jpg">
+            <h2>Gucci</h2>
+            <img src="ROPA/Pantalones/gucci/1.jpg">
+            <img src="ROPA/Pantalones/gucci/2.jpg">
+            <img src="ROPA/Pantalones/gucci/3.jpg">
+            <img src="ROPA/Pantalones/gucci/4.jpg">
+            <img src="ROPA/Pantalones/gucci/5.jpg">
+            <h2>Nocta</h2>
+            <img src="ROPA/Pantalones/nocta/1.jpg">
+            <img src="ROPA/Pantalones/nocta/2.jpg">
+            <img src="ROPA/Pantalones/nocta/3.jpg">
+            <img src="ROPA/Pantalones/nocta/4.jpg">
+            <img src="ROPA/Pantalones/nocta/5.jpg">
+        </div>
+        <div id="grupo4">
+            <h2>Bolso Chloe</h2>
+            <img src="ROPA/Accesorios/bolso CHLOE/1.jpg">
+            <img src="ROPA/Accesorios/bolso CHLOE/2.jpg">
+            <img src="ROPA/Accesorios/bolso CHLOE/3.jpg">
+            <img src="ROPA/Accesorios/bolso CHLOE/4.jpg">
+            <img src="ROPA/Accesorios/bolso CHLOE/5.jpg">
+            <h2>Bolso Dior</h2>
+            <img src="ROPA/Accesorios/bolso dior/1.jpg">
+            <img src="ROPA/Accesorios/bolso dior/2.jpg">
+            <img src="ROPA/Accesorios/bolso dior/3.jpg">
+            <img src="ROPA/Accesorios/bolso dior/4.jpg">
+            <img src="ROPA/Accesorios/bolso dior/5.jpg">
+            <h2>Bolso Goyard</h2>
+            <img src="ROPA/Accesorios/bolso goyard/1.jpg">
+            <img src="ROPA/Accesorios/bolso goyard/1.jpg">
+            <img src="ROPA/Accesorios/bolso goyard/1.jpg">
+            <h2>Bolso Louis Vuitton</h2>
+            <img src="ROPA/Accesorios/bolso louis vuitton/1.jpg">
+            <img src="ROPA/Accesorios/bolso louis vuitton/2.jpg">
+            <img src="ROPA/Accesorios/bolso louis vuitton/3.jpg">
+            <h2>Bolso Louis Vuitton</h2>
+            <img src="ROPA/Accesorios/bolso LV 2/1.jpg">
+            <img src="ROPA/Accesorios/bolso LV 2/2.jpg">
+            <img src="ROPA/Accesorios/bolso LV 2/3.jpg">
+            <h2>Bolso Louis Vuitton Hombre</h2>
+            <img src="ROPA/Accesorios/bolso LV hombre/1.png">
+            <img src="ROPA/Accesorios/bolso LV hombre/2.jpg">
+            <img src="ROPA/Accesorios/bolso LV hombre/3.jpg">
+            <img src="ROPA/Accesorios/bolso LV hombre/4.jpg">
+            <img src="ROPA/Accesorios/bolso LV hombre/5.jpg">
+            <h2>Bolso Louis Vuitton</h2>
+            <img src="ROPA/Accesorios/bolso mujer LV/1.jpg">
+            <img src="ROPA/Accesorios/bolso mujer LV/2.jpg">
+            <img src="ROPA/Accesorios/bolso mujer LV/5.jpg">
+            <img src="ROPA/Accesorios/bolso mujer LV/3.jpg">
+            <img src="ROPA/Accesorios/bolso mujer LV/4.jpg">
+            <h2>Bufanda Burberry</h2>
+            <img src="ROPA/Accesorios/bufanda burberry/1.jpg">
+            <img src="ROPA/Accesorios/bufanda burberry/2.jpg">
+            <img src="ROPA/Accesorios/bufanda burberry/3.jpg">
+            <img src="ROPA/Accesorios/bufanda burberry/4.jpg">
+            <img src="ROPA/Accesorios/bufanda burberry/5.jpg">
+            <h2>Bufanda Louis Vuitton</h2>
+            <img src="ROPA/Accesorios/bufandalouis vuitton/1.jpg">
+            <img src="ROPA/Accesorios/bufandalouis vuitton/2.jpg">
+            <img src="ROPA/Accesorios/bufandalouis vuitton/3.jpg">
+            <img src="ROPA/Accesorios/bufandalouis vuitton/4.jpg">
+            <img src="ROPA/Accesorios/bufandalouis vuitton/5.jpg">
+            <h2>Gafas Louis Vuitton</h2>
+            <img src="ROPA/Accesorios/gafas LV/1.jpg">
+            <img src="ROPA/Accesorios/gafas LV/2.jpg">
+            <img src="ROPA/Accesorios/gafas LV/3.jpg">
+            <img src="ROPA/Accesorios/gafas LV/4.jpg">
+            <img src="ROPA/Accesorios/gafas LV/5.jpg">
+            <h2>Gorro Balenciaga</h2>
+            <img src="ROPA/Accesorios/gorro balenciaga/1.jpg">
+            <img src="ROPA/Accesorios/gorro balenciaga/2.jpg">
+            <img src="ROPA/Accesorios/gorro balenciaga/3.jpg">
+            <img src="ROPA/Accesorios/gorro balenciaga/4.jpg">
+            <img src="ROPA/Accesorios/gorro balenciaga/5.jpg">
+            <h2>Mochila Christian Dior</h2>
+            <img src="ROPA/Accesorios/mochila christian dior/1.jpg">
+            <img src="ROPA/Accesorios/mochila christian dior/2.jpg">
+            <img src="ROPA/Accesorios/mochila christian dior/3.jpg">
+            <img src="ROPA/Accesorios/mochila christian dior/4.jpg">
+            <img src="ROPA/Accesorios/mochila christian dior/5.jpg">
+            <h2>Tarjetero Louis Vuitton</h2>
+            <img src="ROPA/Accesorios/tarjetero LV/1.jpg">
+            <img src="ROPA/Accesorios/tarjetero LV/2.jpg">
+            <img src="ROPA/Accesorios/tarjetero LV/3.jpg">
+            <img src="ROPA/Accesorios/tarjetero LV/4.jpg">
+            <img src="ROPA/Accesorios/tarjetero LV/5.jpg">
+            <h2>Rolex</h2>
+            <img src="ROPA/Accesorios/rolex 1/1.jpeg">
+            <img src="ROPA/Accesorios/rolex 1/2.jpeg">
+            <img src="ROPA/Accesorios/rolex 1/3.jpeg">
+            <img src="ROPA/Accesorios/rolex 1/4.jpeg">
+            <img src="ROPA/Accesorios/rolex 1/5.jpeg">
+            <h2>Rolex</h2>
+            <img src="ROPA/Accesorios/rolex 2/1.jpeg">
+            <img src="ROPA/Accesorios/rolex 2/2.jpeg">
+            <img src="ROPA/Accesorios/rolex 2/3.jpeg">
+        </div>
+        <div id="grupo5">
+            Esto es una web en la que se muestra un catálogo sobre los productos que vendemos. Cabe recalcar que todo lo que vendemos son RÉPLICAS no son productos originales, por lo que son mucho mas baratos que el original.
+            Todos estos productos son de calidad G5, G5 significa que son replicas con la misma calidad que el producto original, por lo que viene con los mismos materiales y certificación que un producto original.
+            En esta web no vienen todos los productos que vendemos, tenemos muchísimos más, por lo que si estas buscando un producto en concreto y no lo encuentras en nuestra web, manda una captura del producto que quieres a nuestro instagram y te diremos si lo tenemos disponible.
+            Muchas gracias por su atencón. 
+        </div>
+    </div>
+    <script>
+        function mostrarImagenes(grupoId) {
+            let grupos = document.querySelectorAll('.imagenes div');
+            grupos.forEach(grupo => grupo.style.display = 'none');
+            document.getElementById(grupoId).style.display = 'block';
+        }
+    </script>
+</body>
+</html>
